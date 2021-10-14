@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>org.gjs</id>
+    <name>GJS</name>
+    <vendor email="etiennept@gmail.com" >Etienne Pellissier-Tanon</vendor>
+
+    <description><![CDATA[
+     Gjs compile plugin  <br>
+     <a href = "https://gitlab.gnome.org/GNOME/gjs"> source code </a>
+
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <configurationType implementation="org.gjs.gjsRunConfiguration.GjsRunConfigurationType"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
